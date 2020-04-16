@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  datadog:
+    build: .
+    environment:
+     - HOST=
+     - DD_API_KEY=
+     - ELASTIC_URL=
+     - ELASTIC_USERNAME=
+     - ELASTIC_PASSWORD=
+     - DATADOG_TAG_ENV=
+     - DATADOG_TAG_APP=
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /proc/:/host/proc/:ro
+      - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
