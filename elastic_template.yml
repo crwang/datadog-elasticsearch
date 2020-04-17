@@ -8,7 +8,8 @@ instances:
     tags:
       - env:${DATADOG_TAG_ENV}
       - app:${DATADOG_TAG_APP}
-      - service:elasticssearch
+      - host:${DATADOG_TAG_HOST}
+      - service:${DATADOG_TAG_SERVICE}
     auth_type: basic
     username: ${ELASTIC_USERNAME}
     password: ${ELASTIC_PASSWORD}
