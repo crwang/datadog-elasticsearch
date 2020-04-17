@@ -9,8 +9,6 @@ services:
      - ELASTIC_URL=
      - ELASTIC_USERNAME=
      - ELASTIC_PASSWORD=
-     - DATADOG_TAG_ENV=
-     - DATADOG_TAG_APP=
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
