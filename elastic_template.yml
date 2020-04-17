@@ -9,6 +9,6 @@ instances:
     username: ${ELASTIC_USERNAME}
     password: ${ELASTIC_PASSWORD}
     tags:
+      - host:
       - env:${DATADOG_TAG_ENV}
       - app:${DATADOG_TAG_APP}
-      - host:${DATADOG_TAG_HOST}

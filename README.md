@@ -9,7 +9,6 @@ The following enviroment variables are needed:
 - ELASTIC_PASSWORD=
 - DATADOG_TAG_ENV=
 - DATADOG_TAG_APP=
-- DATADOG_TAG_HOST=
 
 For the current options for the config, they can be found here:
 https://github.com/DataDog/integrations-core/blob/master/elastic/datadog_checks/elastic/data/conf.yaml.example
